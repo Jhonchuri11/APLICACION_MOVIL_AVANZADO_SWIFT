@@ -46,5 +46,4 @@ print("Mostrando dato: \(nombre) -> \(apellido)" + String(celular))
 
 // En Switf null = nil
 
-var gretting = nil
 
