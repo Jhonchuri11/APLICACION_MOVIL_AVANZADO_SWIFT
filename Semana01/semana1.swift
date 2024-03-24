@@ -35,6 +35,7 @@ for alumno in alumnos {
     print(alumno)
 }
 alumnos.forEach {alumno in
+                 
     print(alumno)
 }
 // iterpolacion para espacios
