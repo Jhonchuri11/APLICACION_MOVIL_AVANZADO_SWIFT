@@ -1,72 +1,33 @@
-// PRACTICANDO DESARROLLO DE LABORATORIO
+// Cree un nuevo playgrounds denominado: EjercicioCondicional1 que permita determinar el mayor, menor y valor intermedio entre tres números. (Utilice IF-ELSE)
 
-var greeting = "hello, playground"
+// Hallando el menor, mayor e intermedio entre 3 numeros
+var n1: Int = 10
+var n2: Int = 60
+var n3: Int = 30
 
-greeting = String(10)
+var mensaje: String = ""
 
-//print(greeting)
+var mayor: Int = 0
+var intermedio: Int = 0
+var menor: Int = 0
 
+// Determinamos usando if and else
 
-// Variable immutable
-
-let fechaNacimiento = "2003-07-07"
-
-var alumnos = ["Juan", "Jose"]
-
-alumnos.append("Pepe")
-//print(alumnos)
-
-// Tipo de dato numero enterno y decimal
-
-var edad: Int = 20
-
-var peso: Float = 62.50
-
-//print(edad)
-
-//print(peso)
-
-let esMayorEdad: Bool
-
-//print(esMayorEdad)
-
-// Funcion que permite comprobar si un numero es par o impar
-
-func esPar(numero: Int) -> Bool {
-  return numero.isMultiple(of: 2)
-}
-//print("Comprobando: \(esPar(numero: 4))")
-
-// Funcionq para calcular si es mayor de edad
-func esMayorEdad(edad: Int) -> Bool {
-  return edad >= 18
+if n1 >= n2 && n1 >= n3 {
+  mayor = n1
+  intermedio = max(n2, n3)
+  menor = min(n2, n3)
+} else if n2 >= n1 && n2 >= n3 {
+  mayor = n2
+  intermedio = max(n1 , n3)
+  menor = min(n1, n3)
+} else {
+  mayor = n3
+  intermedio = max(n1, n2)
+  menor = min(n1, n2)
 }
 
-//print("Mayor: \(esMayorEdad(edad: 20))")
-
-func calcularLadoCuadrado(_ lado: Float) -> Float {
-  return lado * lado
-}
-
-//print("Area[] : \(calcularLadoCuadrado(2))")
-
-
-//for alumno in alumnos {
-//  print(alumno)
-//}
-
-//alumnos.forEach {alumno in
-//    print(alumno)
-//}
-
-let nombre = "Jhon"
-let apellido = "Churivanti Alva"
-
-let celular = 913740129
-
-print("Mostrando datos: \(nombre) -> \(apellido)")
-print("Mostrando dato: \(nombre) -> \(apellido) " + String(celular))
-
-
-// EXAMPLE SEMANA O2
-
+print("Numero mayor: \(mayor)")
+print("Numero intermedio: \(intermedio)")
+print("Numero menor: \(menor)")
+      
